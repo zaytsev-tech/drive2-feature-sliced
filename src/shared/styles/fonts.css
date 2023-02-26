@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Oswald";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Oswald Regular"), local("Oswald-Regular"),
+    url("../assets/fonts/Oswald-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Oswald-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  src: local("Oswald Medium"), local("Oswald-Medium"),
+    url("../assets/fonts/Oswald-Medium.woff2") format("woff2"),
+    url("../assets/fonts/Oswald-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src: local("Oswald SemiBold"), local("Oswald-SemiBold"),
+    url("../assets/fonts/Oswald-SemiBold.woff2") format("woff2"),
+    url("../assets/fonts/Oswald-SemiBold.woff") format("woff");
+}
