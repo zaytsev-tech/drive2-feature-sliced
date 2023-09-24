@@ -1,26 +1,30 @@
 import Head from "next/head";
+import { useCheckOnMobileScreen } from "shared/hooks/useCheckOnMobileScreen";
 import { COLORS } from "shared/styles/colors";
+import { ScreenSizesEnum } from "shared/styles/screenSizes";
 import { STYLE_CONSTANTS } from "shared/styles/style-constants";
+import { Avatar } from "shared/ui/Avatar/Avatar";
 import { BurgerMenu } from "shared/ui/BurgerMenu/BurgerMenu";
+import { IconButton } from "shared/ui/Buttons/IconButton/IconButton";
 import { CarIcon } from "shared/ui/icons/CarIcon";
 import { MessageIcon } from "shared/ui/icons/MessageIcon";
 import { NotificationIcon } from "shared/ui/icons/NotificationIcon";
 import { SearchIcon } from "shared/ui/icons/SearchIcon";
+import { SettingsIcon } from "shared/ui/icons/SettingsIcon";
+import { HeaderInput } from "shared/ui/Inputs/HeaderInput/HeaderInput";
 import { Logo } from "shared/ui/Logo/Logo";
 import styled from "styled-components";
+import { DesktopNavigation } from "./ui/DesktopNavigation/DesktopNavigation";
+import { MobileNavigation } from "./ui/MobileNavigation/MobileNavigation";
 
 export const Header = () => {
+  const { isMobileScreen } = useCheckOnMobileScreen();
+
   return (
     <HeaderBlock>
       <HeaderContent>
         <Logo />
-        <Navigation>
-          <CarIcon />
-          <MessageIcon />
-          <NotificationIcon />
-          <SearchIcon />
-          <BurgerMenu />
-        </Navigation>
+        {isMobileScreen ? <MobileNavigation /> : <DesktopNavigation />}
       </HeaderContent>
     </HeaderBlock>
   );
@@ -33,15 +37,11 @@ const HeaderBlock = styled.header`
 `;
 
 const HeaderContent = styled.div`
-  max-width: 1156px;
+  max-width: ${ScreenSizesEnum.desktop}px;
+
   display: flex;
   position: relative;
   align-items: center;
-`;
 
-const Navigation = styled.div`
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-around;
+  margin: 0 auto;
 `;
