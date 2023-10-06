@@ -27,3 +27,12 @@
     url("../assets/fonts/Oswald-SemiBold.woff2") format("woff2"),
     url("../assets/fonts/Oswald-SemiBold.woff") format("woff");
 }
+
+@font-face {
+  font-family: "NotoSans";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src: local("NotoSans Bold"), local("NotoSans-Bold"),
+    url("../assets/fonts/NotoSans-Bold.woff") format("woff");
+}

@@ -7,4 +7,9 @@ export const TYPOGRAPHY = {
         font-feature-settings: "pnum" on, "lnum" on;
       
     `,
+  mainTitle: `
+    font-family: "NotoSans";
+    word-wrap: break-word;
+    font-size: 30px;
+    line-height: 1.2;`,
 };
