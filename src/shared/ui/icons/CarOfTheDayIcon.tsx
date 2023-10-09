@@ -1,5 +1,5 @@
 type CarOfTheDayIconProps = {
-  className: string;
+  className?: string;
 };
 
 export const CarOfTheDayIcon = ({ className }: CarOfTheDayIconProps) => (
