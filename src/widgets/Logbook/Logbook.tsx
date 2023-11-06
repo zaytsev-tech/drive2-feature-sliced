@@ -1,13 +1,16 @@
 import { SHADOW } from "shared/styles/shadow";
 import { TYPOGRAPHY } from "shared/styles/typography";
 import styled from "styled-components";
+import { LogbookFilters } from "./ui/LogbookFilters/LogbookFilters";
+import { RecentRequests } from "./ui/RecentRequests/RecentRequests";
 
 export const Logbook = () => {
   return (
     <section>
       <Root>
         <Title>Бортжурналы</Title>
-        Дальше будет контент
+        <LogbookFilters />
+        <RecentRequests />
       </Root>
     </section>
   );
@@ -20,7 +23,8 @@ const Root = styled.div`
   ${SHADOW.defaultBlock};
 `;
 
-const Title = styled.h4`
-  ${TYPOGRAPHY.mainTitle};
-  font-size: 25px;
+const Title = styled.h3`
+  ${TYPOGRAPHY.titleH3};
+
+  margin-bottom: 20px;
 `;

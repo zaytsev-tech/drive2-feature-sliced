@@ -17,4 +17,5 @@ export const HomePage = () => {
 
 const HomepageContainer = styled.div`
   display: flex;
+  margin-top: 20px;
 `;

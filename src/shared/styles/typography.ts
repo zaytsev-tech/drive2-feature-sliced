@@ -7,9 +7,28 @@ export const TYPOGRAPHY = {
         font-feature-settings: "pnum" on, "lnum" on;
       
     `,
+
   mainTitle: `
     font-family: "NotoSans";
     word-wrap: break-word;
-    font-size: 30px;
-    line-height: 1.2;`,
+    font-size: 30px;`,
+
+  titleH3: `
+    font-family: "NotoSans";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1;
+  `,
+
+  titleH4: `
+  font-family: "NotoSans";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  `,
+
+  paragraph: `
+  font-family: "Arial";
+  font-weight: 300;
+  font-size: 15px;`,
 };

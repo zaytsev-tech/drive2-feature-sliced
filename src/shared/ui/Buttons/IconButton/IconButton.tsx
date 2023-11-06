@@ -6,18 +6,18 @@ import styled from "styled-components";
 type IconButtonProps = {
   icon: ReactNode;
   onClick?: () => void;
+  className?: string;
 };
 
-export const IconButton = ({ icon, onClick }: IconButtonProps) => {
-  return <StyledButton icon={icon} onClick={onClick} />;
+export const IconButton = ({ icon, onClick, className }: IconButtonProps) => {
+  return <StyledButton icon={icon} onClick={onClick} className={className} />;
 };
 
 const StyledButton = styled(Button)`
   &.ant-btn-default {
-    width: 50px;
-    height: 50px;
     background-color: transparent;
     border: 0;
+    padding: 3px;
 
     &:hover {
       background-color: ${COLORS.button.header.hoverBg};

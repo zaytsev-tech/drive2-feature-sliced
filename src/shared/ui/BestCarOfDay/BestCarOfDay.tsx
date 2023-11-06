@@ -26,6 +26,7 @@ const Root = styled.div`
   position: relative;
 
   border-radius: 6px;
+  margin-top: 20px;
 `;
 
 const StyledImage = styled(Image)`

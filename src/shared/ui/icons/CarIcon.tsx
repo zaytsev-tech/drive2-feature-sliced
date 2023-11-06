@@ -1,4 +1,4 @@
-import { IconProps } from "shared/constants/types";
+import { IconProps } from "shared/types/types";
 import { COLORS } from "shared/styles/colors";
 
 export const CarIcon = ({
