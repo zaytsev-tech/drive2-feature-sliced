@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useCheckOnMobileScreen } from "shared/hooks/useCheckOnMobileScreen";
 import { COLORS } from "shared/styles/colors";
-import { ScreenSizesEnum } from "shared/styles/screenSizes";
+import { SCREEN_SIZE_PX } from "shared/styles/screenSizes";
 import { STYLE_CONSTANTS } from "shared/styles/style-constants";
 import { Avatar } from "shared/ui/Avatar/Avatar";
 import { BurgerMenu } from "shared/ui/BurgerMenu/BurgerMenu";
@@ -37,11 +37,10 @@ const HeaderBlock = styled.header`
 `;
 
 const HeaderContent = styled.div`
-  max-width: ${ScreenSizesEnum.desktop}px;
-
   display: flex;
   position: relative;
   align-items: center;
 
   margin: 0 auto;
+  max-width: ${SCREEN_SIZE_PX.desktop}px;
 `;

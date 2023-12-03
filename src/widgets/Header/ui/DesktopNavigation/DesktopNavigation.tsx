@@ -1,3 +1,4 @@
+import { MEDIA_DEVICE_SIZE, SCREEN_SIZE_PX } from "shared/styles/screenSizes";
 import { Avatar } from "shared/ui/Avatar/Avatar";
 import { IconButton } from "shared/ui/Buttons/IconButton/IconButton";
 import { MessageIcon } from "shared/ui/icons/MessageIcon";
@@ -41,5 +42,9 @@ const IconsContainer = styled.div`
 
   & > svg {
     min-width: 50px;
+  }
+
+  @media ${MEDIA_DEVICE_SIZE.desktop} {
+    right: 0px;
   }
 `;

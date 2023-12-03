@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ScreenSizesEnum } from "shared/styles/screenSizes";
+import { SCREEN_SIZE_PX } from "shared/styles/screenSizes";
 
 export const useCheckOnMobileScreen = () => {
   const [isMobileScreen, setIsMobileScreen] = useState(false);
@@ -7,7 +7,7 @@ export const useCheckOnMobileScreen = () => {
   const handleResizeWindow = () => {
     const width = window.innerWidth;
 
-    if (width < ScreenSizesEnum.tablet) {
+    if (width < SCREEN_SIZE_PX.tablet) {
       setIsMobileScreen(true);
     } else {
       setIsMobileScreen(false);

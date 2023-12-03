@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useCheckScreenSize } from "shared/hooks/useCheckScreenSize";
 import { COLORS } from "shared/styles/colors";
-import { ScreenSizesEnum } from "shared/styles/screenSizes";
+import { SCREEN_SIZE_PX } from "shared/styles/screenSizes";
 import { TYPOGRAPHY } from "shared/styles/typography";
 import styled from "styled-components";
 
@@ -10,7 +10,7 @@ export const Logo = () => {
 
   return (
     <StyledLink href="/">
-      {screenSize <= ScreenSizesEnum.desktop ? (
+      {screenSize <= SCREEN_SIZE_PX.desktop ? (
         <MobileLogoContainer>D</MobileLogoContainer>
       ) : (
         <LogoContainer>DRIVE2.RU</LogoContainer>
